@@ -11,22 +11,22 @@ model training and automated deployment.
 The examples demonstrate how you can:
  * Run pipelines locally on a notebook.
  * Run some or all tasks on an elastic Kubernetes cluster using serverless functions/jobs.
- * Create automated ML workflows using [KubeFlow Pipelines](https://www.kubeflow.org/docs/pipelines/overview/pipelines-overview/).
+ * Create automated ML workflows using [Kubeflow Pipelines](https://www.kubeflow.org/docs/pipelines/overview/pipelines-overview/).
  * Maintain project lifecycle
 
 The demo applications are tested on the [Iguazio's Data Science PaaS](https://www.iguazio.com/), 
 and use Iguazio's shared data fabric (v3io), and can be modified to work with any shared file storage by replacing the 
-```apply(v3io_mount())``` calls with other KubeFlow volume modifiers (e.g. `apply(mlrun.platforms.mount_pvc())`) . 
+```apply(v3io_mount())``` calls with other Kubeflow volume modifiers (e.g. `apply(mlrun.platforms.mount_pvc())`) . 
 You can request a [free trial of Iguazio PaaS](https://www.iguazio.com/lp/14-day-free-trial-in-the-cloud/).
 
 ## Running the demo
 
 Pre-requisites:
-* A Kubernetes cluster with pre-installed KubeFlow, Nuclio.
+* A Kubernetes cluster with pre-installed Kubeflow, Nuclio.
 * MLRun Service and UI installed, [see MLRun readme](https://github.com/mlrun/mlrun).
 
 1. Clone this repo to your own Git.<br>
-2. in a client or notebook properly configured with MLRun and KubeFlow run:
+2. in a client or notebook properly configured with MLRun and Kubeflow run:
 
 `mlrun project my-proj/ -u git://github.com/<your-fork>/demo-xgb-project.git`
 
